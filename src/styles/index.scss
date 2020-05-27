@@ -1,0 +1,67 @@
+@import './bootstrap/booststrap.scss';
+
+.card {
+  .data-value {
+    font-size: $h2-font-size;
+    font-weight: $font-weight-medium;
+
+    @include media-breakpoint-up(sm) {
+      font-size: $h1-font-size;
+    }
+  }
+  .data-title {
+    @include media-breakpoint-up(sm) {
+      font-size: $font-size-lg;
+    }
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .flat-shadow {
+    box-shadow: 5px 5px 0 transparentize(gray('100'), 0.7);
+  }
+}
+
+.report-control {
+  line-height: 1;
+}
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+  > .col,
+  > [class*='col-'] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.sm-gutters {
+  $sm-grid-gutter: $grid-gutter-width / 6;
+
+  > .col,
+  > [class*='col-'] {
+    &:first-child {
+      padding-right: $sm-grid-gutter;
+    }
+    &:not(:first-child):not(:last-child) {
+      padding-right: $sm-grid-gutter;
+      padding-left: $sm-grid-gutter;
+    }
+    &:last-child {
+      padding-left: $sm-grid-gutter;
+    }
+  }
+}
+
+.report-container {
+  border-radius: 10px;
+  background-color: transparentize(gray('100'), 0.85);
+  padding: $grid-gutter-width / 2;
+
+  @include media-breakpoint-down(sm) {
+    padding-left: $grid-gutter-width / 4;
+    padding-right: $grid-gutter-width / 4;
+  }
+}

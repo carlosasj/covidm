@@ -1,0 +1,33 @@
+@import '../styles/bootstrap/exports';
+
+// .banner {
+//   text-align: center;
+//   background-size: cover;
+
+//   height: 200px;
+//   width: 100%;
+//   margin-bottom: 3em;
+//   display: table;
+// }
+
+// .banner-head {
+//   display: table-cell;
+//   vertical-align: middle;
+//   margin-bottom: 0;
+//   font-size: 2em;
+//   color: white;
+//   font-weight: 500;
+//   text-shadow: 0 1px 1px black;
+// }
+
+.app-header {
+  h1 {
+    // color: $light-text;
+    text-transform: uppercase;
+    // text-shadow: 2px 2px 0px #271f5a, 4px 4px 0px #d92319;
+
+    span {
+      color: color('yellow');
+    }
+  }
+}
