@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2020-06-06T03:00:00.000Z",
+  "updatedAt": "2020-06-07T03:00:00.000Z",
   "reports": [
     {
       "source": "https://www.facebook.com/DomingosMartins.DM/photos/a.136880539855382/1333990053477752/",
@@ -621,6 +621,19 @@
       "confirmedisolation": 40,
       "confirmedhospital": 2,
       "confirmedcured": 98,
+      "confirmeddead": 1
+    },
+    {
+      "drawverticalline": true,
+      "source": "https://www.facebook.com/DomingosMartins.DM/photos/rpp.136775396532563/1399389676937789/",
+      "date": "2020-06-07T03:00:00.000Z",
+      "notifiedall": 507,
+      "notifiedconfirmed": 146,
+      "notifiedsuspicious": 211,
+      "notifieddiscarded": 150,
+      "confirmedisolation": 42,
+      "confirmedhospital": 2,
+      "confirmedcured": 102,
       "confirmeddead": 1
     }
   ]
