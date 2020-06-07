@@ -24,6 +24,7 @@ export function DailyReport(props: PropTypes) {
       confirmedisolation,
       confirmedhospital,
       confirmedcured,
+      confirmeddead,
       comments,
     },
     hasPrevious = true,
@@ -104,6 +105,11 @@ export function DailyReport(props: PropTypes) {
             <div className="col d-flex flex-column">
               <DataCard className="flex-fill" title="Curados" value={confirmedcured} />
             </div>
+            {confirmeddead && (
+              <div className="col d-flex flex-column">
+                <DataCard className="flex-fill" title="Óbitos" value={confirmeddead} />
+              </div>
+            )}
           </div>
         </div>
       </div>
