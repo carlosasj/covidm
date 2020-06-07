@@ -1,9 +1,14 @@
 import React from 'react';
+import ReactGA from 'react-ga';
 import { Header } from './Header';
 import { HistoryReport } from './HistoryReport';
 import { Chart } from './Chart';
 
-function App() {
+const trackingId = 'UA-168690601-1';
+ReactGA.initialize(trackingId);
+ReactGA.pageview(window.location.pathname + window.location.search);
+
+export default function App() {
   return (
     <div className="app">
       <Header />
@@ -17,5 +22,3 @@ function App() {
     </div>
   );
 }
-
-export default App;

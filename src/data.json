@@ -624,6 +624,7 @@
       "confirmeddead": 1
     },
     {
+      "highlightnotifiedconfirmed": true,
       "drawverticalline": true,
       "source": "https://www.facebook.com/DomingosMartins.DM/photos/rpp.136775396532563/1399389676937789/",
       "date": "2020-06-07T03:00:00.000Z",
