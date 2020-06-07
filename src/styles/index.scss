@@ -16,11 +16,11 @@
   }
 }
 
-@include media-breakpoint-up(sm) {
-  .flat-shadow {
-    box-shadow: 5px 5px 0 transparentize(gray('100'), 0.7);
-  }
-}
+// @include media-breakpoint-up(sm) {
+//   .flat-shadow {
+//     box-shadow: 5px 5px 0 transparentize(gray('100'), 0.7);
+//   }
+// }
 
 .report-control {
   line-height: 1;
@@ -57,7 +57,7 @@
 
 .report-container {
   border-radius: 10px;
-  background-color: transparentize(gray('100'), 0.85);
+  background-color: transparentize(gray('900'), 0.85);
   padding: $grid-gutter-width / 2;
 
   @include media-breakpoint-down(sm) {

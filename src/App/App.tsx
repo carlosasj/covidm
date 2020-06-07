@@ -9,6 +9,9 @@ function App() {
       <Header />
       <div className="container-fluid">
         <Chart />
+        <div className="row">
+          <div className="s12 py-4"></div>
+        </div>
         <HistoryReport />
       </div>
     </div>

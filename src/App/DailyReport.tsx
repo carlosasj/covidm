@@ -65,7 +65,7 @@ export function DailyReport(props: PropTypes) {
           <div className="row">
             <div className="col-12 mb-2">
               <div className="card flat-shadow">
-                <div className="card-body font-weight-light text-center">
+                <div className="card-body text-center">
                   <span aria-hidden="true">📝</span> Dentre os casos notificados:
                 </div>
               </div>
@@ -88,7 +88,7 @@ export function DailyReport(props: PropTypes) {
           <div className="row">
             <div className="col-12 mb-2">
               <div className="card flat-shadow">
-                <div className="card-body font-weight-light text-center">
+                <div className="card-body text-center">
                   <span aria-hidden="true">✅</span> Dentre os casos confirmados:
                 </div>
               </div>
@@ -110,7 +110,7 @@ export function DailyReport(props: PropTypes) {
       <div className="row">
         {comments && <div className="col">{comments}</div>}
         <div className="col-12 text-right">
-          <a href={source} target="_blank" rel="noopener noreferrer" className="text-white font-weight-light small">
+          <a href={source} target="_blank" rel="noopener noreferrer" className="font-weight-light small">
             fonte <img width="12px" src={linkThin} alt="ícone de link externo" />
           </a>
         </div>

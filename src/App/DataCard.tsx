@@ -3,11 +3,11 @@ import React from 'react';
 interface PropTypes {
   className?: string;
   title: string;
-  value: number | string;
+  value?: number | string;
 }
 
 export function DataCard(props: PropTypes) {
-  const { title, value, className } = props;
+  const { title, value = 0, className } = props;
 
   return (
     <div className={`card flat-shadow${className ? ` ${className}` : ''}`}>

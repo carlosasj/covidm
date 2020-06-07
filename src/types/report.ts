@@ -5,14 +5,18 @@ export interface ReportData {
 }
 
 export interface Report {
-  source:             string;
-  date:               string;
-  notifiedall:        number;
-  notifiedconfirmed:  number;
+  source: string;
+  date: string;
+  notifiedall: number;
   notifiedsuspicious: number;
-  notifieddiscarded:  number;
-  confirmedisolation: number;
-  confirmedhospital:  number;
-  confirmedcured:     number;
-  comments?:          string;
+  notifieddiscarded: number;
+  drawverticalline?: boolean;
+  notifiedconfirmed?: number;
+  confirmedisolation?: number;
+  comments?: string;
+  confirmedhospital?: number;
+  confirmedcured?: number;
+  highlightnotifiedall?: boolean;
+  highlightnotifiedconfirmed?: boolean;
+  confirmeddead?: number;
 }
