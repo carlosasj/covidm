@@ -39,7 +39,7 @@ function RenderReference(props: PropTypes) {
   const { fill, x, y } = props;
 
   return (
-    <ReferenceDot key={x} x={x} y={y} r={5} fill={fill} stroke="none">
+    <ReferenceDot key={`${x}_${y}`} x={x} y={y} r={5} fill={fill} stroke="none">
       <Label position="top" value={x} fontSize=".75rem" offset={25} />
       <Label position="top" value={y} />
     </ReferenceDot>
