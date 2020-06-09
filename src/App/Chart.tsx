@@ -20,7 +20,7 @@ const reportsParsed = reports.map(r => ({
   date: isoDateToShort(r.date),
 }));
 
-const horizontalLines = [50, 100, 150, 200, 300, 400, 500];
+const horizontalLines = [50, 100, 150, 200, 300, 400, 500, 600];
 const verticalLines = reportsParsed.filter(r => r.drawverticalline).map(r => r.date);
 
 const lastReport = reportsParsed[reportsParsed.length - 1];
