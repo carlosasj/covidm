@@ -30,18 +30,19 @@ if (!lastReport.drawverticalline) {
 }
 
 interface PropTypes {
+  bottom?: boolean;
   x: string;
   y: number;
   fill: string;
 }
 
 function RenderReference(props: PropTypes) {
-  const { fill, x, y } = props;
+  const { bottom = false, fill, x, y } = props;
 
   return (
     <ReferenceDot key={`${x}_${y}`} x={x} y={y} r={5} fill={fill} stroke="none">
-      <Label position="top" value={x} fontSize=".75rem" offset={25} />
-      <Label position="top" value={y} />
+      <Label position="top" value={x} fontSize=".75rem" offset={bottom ? -50 : 25} />
+      <Label position="top" value={y} offset={bottom ? -30 : 5} />
     </ReferenceDot>
   );
 }
@@ -49,7 +50,9 @@ function RenderReference(props: PropTypes) {
 const highlightAll = reportsParsed.filter(r => r.highlightnotifiedall);
 const highlightConfirmed = reportsParsed.filter(r => r.highlightnotifiedconfirmed);
 
-const referencesAll = highlightAll.map(r => RenderReference({ x: r.date, y: r.notifiedall, fill: '#4A148C' }));
+const referencesAll = highlightAll.map(r =>
+  RenderReference({ bottom: true, x: r.date, y: r.notifiedall, fill: '#4A148C' }),
+);
 const referencesConfirmed = highlightConfirmed.map(r =>
   RenderReference({ x: r.date, y: r.notifiedconfirmed!, fill: '#004D40' }),
 );
@@ -58,7 +61,7 @@ export function Chart() {
   return (
     <div style={{ height: 'calc(100vh - 121px)' }}>
       <ResponsiveContainer width="100%" height="100%">
-        <ComposedChart width={730} height={250} data={reportsParsed}>
+        <ComposedChart data={reportsParsed}>
           <XAxis dataKey="date" ticks={verticalLines} />
           <YAxis ticks={horizontalLines} />
           <Legend />
