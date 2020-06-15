@@ -20,7 +20,7 @@ const reportsParsed = reports.map(r => ({
   date: isoDateToShort(r.date),
 }));
 
-const horizontalLines = [50, 100, 150, 200, 300, 400, 500, 600];
+const horizontalLines = [50, 100, 150, 200, 300, 400, 500, 600, 700];
 const verticalLines = reportsParsed.filter(r => r.drawverticalline).map(r => r.date);
 
 const lastReport = reportsParsed[reportsParsed.length - 1];
@@ -51,7 +51,7 @@ const highlightAll = reportsParsed.filter(r => r.highlightnotifiedall);
 const highlightConfirmed = reportsParsed.filter(r => r.highlightnotifiedconfirmed);
 
 const referencesAll = highlightAll.map(r =>
-  RenderReference({ bottom: true, x: r.date, y: r.notifiedall, fill: '#4A148C' }),
+  RenderReference({ bottom: false, x: r.date, y: r.notifiedall, fill: '#4A148C' }),
 );
 const referencesConfirmed = highlightConfirmed.map(r =>
   RenderReference({ x: r.date, y: r.notifiedconfirmed!, fill: '#004D40' }),
@@ -63,7 +63,7 @@ export function Chart() {
       <ResponsiveContainer width="100%" height="100%">
         <ComposedChart data={reportsParsed}>
           <XAxis dataKey="date" ticks={verticalLines} />
-          <YAxis ticks={horizontalLines} />
+          <YAxis ticks={horizontalLines} domain={[0, 'dataMax']} />
           <Legend />
           <CartesianGrid strokeDasharray="5" stroke="rgba(0, 0, 0, .2)" />
           <Bar dataKey="confirmedhospital" stackId="confirmed" barSize={20} fill="#D30808" name="Hospitalizados" />
