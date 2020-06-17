@@ -709,6 +709,7 @@
       "confirmeddead": 3
     },
     {
+      "highlightnotifiedall": true,
       "drawverticalline": true,
       "source": "https://www.facebook.com/DomingosMartins.DM/photos/a.136880539855382/1405598922983531/",
       "date": "2020-06-14T03:00:00.000Z",
@@ -734,8 +735,6 @@
       "confirmeddead": 3
     },
     {
-      "highlightnotifiedall": true,
-      "highlightnotifiedconfirmed": true,
       "source": "https://www.facebook.com/DomingosMartins.DM/photos/a.136880539855382/1407392069470883/",
       "date": "2020-06-16T03:00:00.000Z",
       "notifiedall": 627,
@@ -745,6 +744,20 @@
       "confirmedisolation": 29,
       "confirmedhospital": 1,
       "confirmedcured": 158,
+      "confirmeddead": 3
+    },
+    {
+      "highlightnotifiedall": true,
+      "highlightnotifiedconfirmed": true,
+      "source": "https://www.facebook.com/DomingosMartins.DM/photos/a.136880539855382/1408150439395046/",
+      "date": "2020-06-17T03:00:00.000Z",
+      "notifiedall": 687,
+      "notifiedconfirmed": 199,
+      "notifiedsuspicious": 311,
+      "notifieddiscarded": 177,
+      "confirmedisolation": 33,
+      "confirmedhospital": 3,
+      "confirmedcured": 160,
       "confirmeddead": 3
     }
   ]

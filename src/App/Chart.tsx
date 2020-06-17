@@ -41,7 +41,7 @@ function RenderReference(props: PropTypes) {
 
   return (
     <ReferenceDot key={`${x}_${y}`} x={x} y={y} r={5} fill={fill} stroke="none">
-      <Label position="top" value={x} fontSize=".75rem" offset={bottom ? -50 : 25} />
+      <Label position="top" value={x} offset={bottom ? -50 : 25} fontSize=".75rem" />
       <Label position="top" value={y} offset={bottom ? -30 : 5} />
     </ReferenceDot>
   );
@@ -63,7 +63,7 @@ export function Chart() {
       <ResponsiveContainer width="100%" height="100%">
         <ComposedChart data={reportsParsed}>
           <XAxis dataKey="date" ticks={verticalLines} />
-          <YAxis ticks={horizontalLines} domain={[0, 'dataMax']} />
+          <YAxis ticks={horizontalLines} domain={[0, 750]} />
           <Legend />
           <CartesianGrid strokeDasharray="5" stroke="rgba(0, 0, 0, .2)" />
           <Bar dataKey="confirmedhospital" stackId="confirmed" barSize={20} fill="#D30808" name="Hospitalizados" />
