@@ -65,3 +65,12 @@
     padding-right: $grid-gutter-width / 4;
   }
 }
+
+.chart-wrapper {
+  height: calc(100vh - 121px);
+
+  @include media-breakpoint-down(sm) {
+    max-height: 100vh;
+    height: 640px;
+  }
+}

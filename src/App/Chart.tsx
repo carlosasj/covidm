@@ -20,7 +20,7 @@ const reportsParsed = reports.map(r => ({
   date: isoDateToShort(r.date),
 }));
 
-const horizontalLines = [50, 100, 150, 200, 300, 400, 500, 600, 700];
+const horizontalLines = [50, 100, 150, 200, 250, 300, 400, 500, 600, 700, 800];
 const verticalLines = reportsParsed.filter(r => r.drawverticalline).map(r => r.date);
 
 const lastReport = reportsParsed[reportsParsed.length - 1];
@@ -36,13 +36,39 @@ interface PropTypes {
   fill: string;
 }
 
+function CustomizedLabel(props: any) {
+  console.log(props);
+  const {
+    viewBox: { x, y },
+    date,
+    value,
+  } = props;
+
+  return (
+    <text x={x} y={y} fontSize={10} textAnchor="end">
+      <tspan x={x} dy="-20" dx="0" fontSize=".75rem">
+        {date}
+      </tspan>
+      <tspan x={x} dy="20" dx="0" fontSize="1rem">
+        {value}
+      </tspan>
+    </text>
+  );
+}
+
+//<text font-size=".75rem" x="406.28767123287673" y="261.145" class="recharts-text recharts-label" text-anchor="middle">
+//  <tspan x="406.28767123287673" dy="0em">06/06</tspan>
+//</text>
+
 function RenderReference(props: PropTypes) {
-  const { bottom = false, fill, x, y } = props;
+  const { fill, x, y } = props;
 
   return (
     <ReferenceDot key={`${x}_${y}`} x={x} y={y} r={5} fill={fill} stroke="none">
-      <Label position="top" value={x} offset={bottom ? -50 : 25} fontSize=".75rem" />
-      <Label position="top" value={y} offset={bottom ? -30 : 5} />
+      <Label position="insideBottomLeft" value={y} content={<CustomizedLabel date={x} />} />
+
+      {/* <Label position="top" value={x} offset={25} fontSize=".75rem" /> */}
+      {/* <Label position="top" value={y} offset={bottom ? -30 : 5} /> */}
     </ReferenceDot>
   );
 }
@@ -59,11 +85,11 @@ const referencesConfirmed = highlightConfirmed.map(r =>
 
 export function Chart() {
   return (
-    <div style={{ height: 'calc(100vh - 121px)' }}>
+    <div className="chart-wrapper">
       <ResponsiveContainer width="100%" height="100%">
         <ComposedChart data={reportsParsed}>
           <XAxis dataKey="date" ticks={verticalLines} />
-          <YAxis ticks={horizontalLines} domain={[0, 750]} />
+          <YAxis ticks={horizontalLines} domain={[0, 'dataMax']} width={30} />
           <Legend />
           <CartesianGrid strokeDasharray="5" stroke="rgba(0, 0, 0, .2)" />
           <Bar dataKey="confirmedhospital" stackId="confirmed" barSize={20} fill="#D30808" name="Hospitalizados" />

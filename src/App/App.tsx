@@ -12,8 +12,10 @@ export default function App() {
   return (
     <div className="app">
       <Header />
-      <div className="container-fluid">
+      <div className="container-fluid px-0 px-sm-3">
         <Chart />
+      </div>
+      <div className="container-fluid">
         <div className="row">
           <div className="s12 py-4"></div>
         </div>
