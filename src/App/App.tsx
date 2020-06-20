@@ -4,9 +4,11 @@ import { Header } from './Header';
 import { HistoryReport } from './HistoryReport';
 import { Chart } from './Chart';
 
-const trackingId = 'UA-168690601-1';
-ReactGA.initialize(trackingId);
-ReactGA.pageview(window.location.pathname + window.location.search);
+if (process.env.NODE_ENV === 'production') {
+  const trackingId = 'UA-168690601-1';
+  ReactGA.initialize(trackingId);
+  ReactGA.pageview(window.location.pathname + window.location.search);
+}
 
 export default function App() {
   return (
