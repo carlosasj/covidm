@@ -1,9 +1,22 @@
 $colors: (
   'dm-blue': #271f5a,
+  'graph-red': #d30808,
+  'graph-orange': #fb8c00,
+  'graph-teal': #009688,
+  'graph-purple': #673ab7,
+  'graph-black': #495057,
 );
 
 $theme-colors: (
   'primary': color('dm-blue'),
+);
+
+$graph-colors: (
+  'graph-red': color('graph-red'),
+  'graph-orange': color('graph-orange'),
+  'graph-teal': color('graph-teal'),
+  'graph-purple': color('graph-purple'),
+  'graph-black': color('graph-black'),
 );
 
 $light-text: #f2f2f2;

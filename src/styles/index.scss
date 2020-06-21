@@ -74,3 +74,15 @@
     height: 640px;
   }
 }
+
+@each $color, $value in $graph-colors {
+  .btn-outline-#{$color} {
+    @include button-outline-variant($value);
+
+    @include hover() {
+      color: $value;
+      background-color: transparent;
+      border-color: $value;
+    }
+  }
+}
