@@ -2,7 +2,7 @@ import { KeysOfType } from '../types/utility';
 import { isNumber } from 'util';
 
 export function nextMultipleOf(multipleOf: number, reference: number) {
-  return multipleOf * Math.ceil(reference / multipleOf);
+  return multipleOf * Math.ceil((reference + 1) / multipleOf);
 }
 
 export function maxOf<T extends unknown>(arr: T[], keys: Array<KeysOfType<T, number>>) {
