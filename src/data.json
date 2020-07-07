@@ -971,8 +971,6 @@
       "confirmeddead": 4
     },
     {
-      "highlightnotifiedall": true,
-      "highlightnotifiedconfirmed": true,
       "source": "https://www.facebook.com/DomingosMartins.DM/photos/a.136880539855382/1423345157875574/",
       "date": "2020-07-05T03:00:00.000Z",
       "notifiedall": 1087,
@@ -983,6 +981,33 @@
       "confirmedhospital": 4,
       "confirmedcured": 240,
       "confirmeddead": 4
+    },
+    {
+      "source": "https://www.facebook.com/DomingosMartins.DM/posts/1424280757782014",
+      "date": "2020-07-06T03:00:00.000Z",
+      "notifiedall": 1087,
+      "notifiedconfirmed": 288,
+      "notifiedsuspicious": 536,
+      "notifieddiscarded": 263,
+      "confirmedisolation": 40,
+      "confirmedhospital": 4,
+      "confirmedcured": 240,
+      "confirmeddead": 4,
+      "comments": "\"Por motivos técnicos, a Secretaria Municipal de Saúde informa que não será possível divulgar os dados do Boletim Coronavírus nesta segunda-feira (06). Houve um problema na plataforma E-SUS, onde os dados do coronavírus são lançados. Os funcionários responsáveis estão trabalhando para reparar o sistema. Assim que a questão for resolvida, o boletim voltará a ser postado.\" Por conta disso, os dados do dia anterior serão repetidos"
+    },
+    {
+      "highlightnotifiedall": true,
+      "highlightnotifiedconfirmed": true,
+      "source": "https://www.facebook.com/DomingosMartins.DM/posts/1425168517693238",
+      "date": "2020-07-07T03:00:00.000Z",
+      "notifiedall": 1197,
+      "notifiedconfirmed": 312,
+      "notifiedsuspicious": 610,
+      "notifieddiscarded": 275,
+      "confirmedisolation": 32,
+      "confirmedhospital": 7,
+      "confirmedcured": 267,
+      "confirmeddead": 6
     }
   ]
 }

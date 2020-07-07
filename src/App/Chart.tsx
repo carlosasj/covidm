@@ -27,8 +27,8 @@ const {
   'confirmeddead',
 ]);
 
-const nextMultipleOfNotifiedAll = nextMultipleOf(100, maxOfNotifiedAll);
-const nextMultipleOfNotifiedConfirmed = nextMultipleOf(50, maxOfNotifiedConfirmed);
+const nextMultipleOfNotifiedAll = nextMultipleOf(100, maxOfNotifiedAll + 15);
+const nextMultipleOfNotifiedConfirmed = nextMultipleOf(50, maxOfNotifiedConfirmed + 10);
 const nextMultipleOfOthers = nextMultipleOf(
   50,
   Math.max(maxOfConfirmedHospital, maxOfConfirmedIsolation, maxOfConfirmedDead),
