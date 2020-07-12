@@ -620,7 +620,8 @@
       "confirmedisolation": 40,
       "confirmedhospital": 2,
       "confirmedcured": 98,
-      "confirmeddead": 1
+      "confirmeddead": 1,
+      "verifyConfirmed": "Erro"
     },
     {
       "drawverticalline": true,
@@ -633,7 +634,8 @@
       "confirmedisolation": 42,
       "confirmedhospital": 2,
       "confirmedcured": 102,
-      "confirmeddead": 1
+      "confirmeddead": 1,
+      "verifyConfirmed": "Erro"
     },
     {
       "highlightnotifiedconfirmed": true,
@@ -658,7 +660,8 @@
       "confirmedisolation": 22,
       "confirmedhospital": 4,
       "confirmedcured": 128,
-      "confirmeddead": 1
+      "confirmeddead": 1,
+      "verifyNotified": "Erro"
     },
     {
       "source": "https://www.facebook.com/DomingosMartins.DM/photos/a.136880539855382/1401963460013744/",
@@ -907,7 +910,8 @@
       "confirmedisolation": 31,
       "confirmedhospital": 4,
       "confirmedcured": 231,
-      "confirmeddead": 4
+      "confirmeddead": 4,
+      "verifyConfirmed": "Erro"
     },
     {
       "source": "https://www.facebook.com/DomingosMartins.DM/photos/a.205543712989064/1419226371620786/",
@@ -996,9 +1000,10 @@
       "confirmedhospital": 4,
       "confirmedcured": 240,
       "confirmeddead": 4,
-      "comments": "\"Por motivos técnicos, a Secretaria Municipal de Saúde informa que não será possível divulgar os dados do Boletim Coronavírus nesta segunda-feira (06). Houve um problema na plataforma E-SUS, onde os dados do coronavírus são lançados. Os funcionários responsáveis estão trabalhando para reparar o sistema. Assim que a questão for resolvida, o boletim voltará a ser postado.\" Por conta disso, os dados do dia anterior serão repetidos"
+      "comments": "\"Por motivos técnicos, a Secretaria Municipal de Saúde informa que não será possível divulgar os dados do Boletim Coronavírus nesta segunda-feira (06). Houve um problema na plataforma E-SUS, onde os dados do coronavírus são lançados. Os funcionários responsáveis estão trabalhando para reparar o sistema. Assim que a questão for resolvida, o boletim voltará a ser postado.\" Por conta disso, os dados do dia anterior serão repetidos."
     },
     {
+      "highlightnotifiedall": true,
       "source": "https://www.facebook.com/DomingosMartins.DM/posts/1425168517693238",
       "date": "2020-07-07T03:00:00.000Z",
       "notifiedall": 1197,
@@ -1032,16 +1037,45 @@
       "confirmedisolation": 37,
       "confirmedhospital": 5,
       "confirmedcured": 276,
-      "confirmeddead": 6
+      "confirmeddead": 6,
+      "verifyNotified": "Erro"
     },
     {
-      "highlightnotifiedall": true,
-      "highlightnotifiedconfirmed": true,
       "source": "https://www.facebook.com/DomingosMartins.DM/posts/1427738774102879",
       "date": "2020-07-10T03:00:00.000Z",
       "notifiedall": 1274,
       "notifiedconfirmed": 335,
       "notifiedsuspicious": 651,
+      "notifieddiscarded": 299,
+      "confirmedisolation": 33,
+      "confirmedhospital": 5,
+      "confirmedcured": 291,
+      "confirmeddead": 6,
+      "verifyNotified": "Erro"
+    },
+    {
+      "source": "https://www.facebook.com/DomingosMartins.DM/posts/14277387741028799",
+      "date": "2020-07-11T03:00:00.000Z",
+      "notifiedall": 1274,
+      "notifiedconfirmed": 335,
+      "notifiedsuspicious": 651,
+      "notifieddiscarded": 299,
+      "confirmedisolation": 33,
+      "confirmedhospital": 5,
+      "confirmedcured": 291,
+      "confirmeddead": 6,
+      "comments": "Não houve divulgação de boletim no dia 11/07. Por conta disso, os dados do dia anterior serão repetidos.",
+      "verifyNotified": "Erro"
+    },
+    {
+      "highlightnotifiedall": true,
+      "highlightnotifiedconfirmed": true,
+      "drawverticalline": true,
+      "source": "https://www.facebook.com/DomingosMartins.DM/posts/1429397490603674",
+      "date": "2020-07-12T03:00:00.000Z",
+      "notifiedall": 1294,
+      "notifiedconfirmed": 335,
+      "notifiedsuspicious": 660,
       "notifieddiscarded": 299,
       "confirmedisolation": 33,
       "confirmedhospital": 5,
