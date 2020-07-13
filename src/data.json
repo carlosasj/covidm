@@ -1068,8 +1068,6 @@
       "verifyNotified": "Erro"
     },
     {
-      "highlightnotifiedall": true,
-      "highlightnotifiedconfirmed": true,
       "drawverticalline": true,
       "source": "https://www.facebook.com/DomingosMartins.DM/posts/1429397490603674",
       "date": "2020-07-12T03:00:00.000Z",
@@ -1080,6 +1078,20 @@
       "confirmedisolation": 33,
       "confirmedhospital": 5,
       "confirmedcured": 291,
+      "confirmeddead": 6
+    },
+    {
+      "highlightnotifiedall": true,
+      "highlightnotifiedconfirmed": true,
+      "source": "https://www.facebook.com/DomingosMartins.DM/posts/1430317107178379",
+      "date": "2020-07-13T03:00:00.000Z",
+      "notifiedall": 1293,
+      "notifiedconfirmed": 340,
+      "notifiedsuspicious": 633,
+      "notifieddiscarded": 320,
+      "confirmedisolation": 34,
+      "confirmedhospital": 4,
+      "confirmedcured": 296,
       "confirmeddead": 6
     }
   ]
